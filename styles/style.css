@@ -1,0 +1,178 @@
+/*--- RESET ---*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*--- RESET END ---*/
+
+
+/*--- FONTS ----*/
+@font-face {
+    font-family: 'MariadPro-Regular';
+    src: url('../fonts/mariadProRegular.otf');
+}
+
+body {
+    font-family: MariadPro-Regular;
+}
+
+.main-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.column-left {
+    width: 50%;
+}
+
+.title-article {
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.text-article {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.progress {
+    height: 15px;
+    background: #f5a700;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 2px;
+    margin:40px 0 40px;
+}
+
+.progress > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(to right, #2d6819, #458226, #67a848, #6bae4e, #67a64c);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress > span:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: linear-gradient(
+            -45deg,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%);
+    z-index: 1;
+    background-size: 20px 20px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+@keyframes animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+.progress > span:after, .animate > span > span {
+    animation: animation 2s linear infinite;
+}
+
+@keyframes expandWidth {
+    0% { width: 0; }
+    100% { width: auto; }
+}
+
+.wrapper-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-form {
+    padding: 20px;
+    outline: none;
+    border: none;
+    background-color: #5fac3f;
+    text-transform: uppercase;
+    color: #fffff1;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.wrapper-form .title-article {
+    text-align: center;
+}
+
+.wrapper-form .text-article {
+    text-align: center;
+    line-height: 30px;
+    color: #a3a3a3;
+}
+
+
+
+
