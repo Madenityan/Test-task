@@ -12,10 +12,10 @@ $(".progress > span").each(function() {
 });
 
 $(".btn-form").on("click",function(){
-    $(".wrapper-form").fadeIn("slow");
+    $(".wrapper-form, .bg-modal").fadeIn("slow");
 });
 
 $(".close").on("click",function(){
-    $(".wrapper-form").fadeOut("slow");
+    $(".wrapper-form, .bg-modal").fadeOut("slow");
 });
 
