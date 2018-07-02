@@ -21,14 +21,24 @@
                 <button class="btn-form">Купить в 1 клик</button>
             </div>
             <div class="wrapper-form">
-                <h2 class="title-article">Обратная связь</h2>
-                <p class="text-article">Заполните форму и наш менеджер свяжется с вами в течение 10 минут</p>
+                <div class="box-close">
+                    <button class="close"></button>
+                </div>
+                <div class="wrapper-box">
+                    <h2 class="title-article">Обратная связь</h2>
+                    <p class="text-article">Заполните форму и наш менеджер свяжется с вами в течение 10 минут</p>
+                    <form name="about_user" method="get" action="#" class="form-popup">
+                        <input type="text" name="username" placeholder="Ваше имя" class="info-user" />
+                        <input type="tel" name="phone" placeholder="Телефон" class="info-user" />
+                        <button type="submit" value="Submit" class="btn-submit">Отправить</button>
+                        <label class="wrapper-checkbox">
+                            <input class="checkbox" type="checkbox" name="checkbox" />
+                            <span>Нажимая кнопку вы соглашаетесь с политикой конфиденциальности</span>
+                        </label>
+                    </form>
+                </div>
             </div>
-
-
-
         </article>
-
     </div>
 </div>
 

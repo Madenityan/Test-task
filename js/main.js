@@ -11,5 +11,10 @@ $(".progress > span").each(function() {
         }, 1000);
 });
 
+$(".btn-form").on("click",function(){
+    $(".wrapper-form").fadeIn("slow");
+});
 
-
+$(".close").on("click",function(){
+    $(".wrapper-form").fadeOut("slow");
+});
