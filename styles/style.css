@@ -28,7 +28,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-    margin: 0;
 }
 
 ol, ul {
@@ -51,8 +50,6 @@ table {
 }
 /*--- RESET END ---*/
 
-
-/*--- FONTS ----*/
 @font-face {
     font-family: 'MariadPro-Regular';
     src: url('../fonts/mariadProRegular.otf');
@@ -61,15 +58,21 @@ table {
 body {
     font-family: MariadPro-Regular;
     background-color: #dbdbdb;
+    margin: 30px;
 }
 
 .main-container {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
+    display: flex;
+}
+
+.column-left, .column-right {
+    width: 50%;
 }
 
 .column-left {
-    width: 50%;
+    margin-right: 30px;
 }
 
 .title-article {
@@ -175,6 +178,12 @@ body {
     padding: 17px;
     display: none;
     border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-left: -329px;
+    margin-top: -300px;
 }
 
 .wrapper-form .text-article {
@@ -243,6 +252,10 @@ body {
     margin-left: 15px;
 }
 
+.wrapper-box .title-article {
+    text-align: center;
+}
+
 .close:after{
     content: 'x';
     font-size: 40px;
@@ -267,6 +280,48 @@ body {
 
 .hide {
     display: none;
+}
+
+.column-right .title-article {
+    font-size:25px;
+}
+
+.column-right .text-article {
+    margin-bottom: 25px;
+}
+
+
+.column-right .text-article:last-child {
+    text-indent: 30px;
+}
+
+.line {
+    font-size: 38px;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+.zoom img{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    max-width: 100%;
+}
+
+.zoom:hover img {
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+
+.zoom {
+    overflow: hidden;
+    width: 500px;
+    height: 400px;
 }
 
 

@@ -18,3 +18,4 @@ $(".btn-form").on("click",function(){
 $(".close").on("click",function(){
     $(".wrapper-form").fadeOut("slow");
 });
+
