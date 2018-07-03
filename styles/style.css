@@ -20,7 +20,6 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -336,6 +335,82 @@ body {
     right: 0;
 }
 
+/*--- MEDIA QUERIES ---*/
+
+@media screen and (max-width: 599px) {
+
+    .main-container {
+        width: 320px;
+        flex-direction: column;
+        padding: 0 15px 20px;
+    }
+
+    .column-left, .column-right {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .zoom {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper-btn {
+        margin: 40px 0;
+    }
+
+    .wrapper-form {
+        padding: 20px;
+        width: 250px;
+        margin-left: -145px;
+    }
+
+    .form-popup {
+        padding: 15px 0 33px;
+    }
+
+    .info-user, .btn-submit {
+        width: 170px;
+    }
+
+    .form-popup > label {
+        width: 200px;
+    }
+
+    .bg-modal {
+        background: transparent;
+    }
+
+    .close:after {
+        font-size: 30px;
+    }
+}
 
 
+@media screen and (min-width: 600px) and (max-width: 990px) {
 
+    .main-container {
+        width: 600px;
+        flex-direction: column;
+        padding: 0 15px 20px;
+    }
+
+    .column-left, .column-right {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .bg-modal {
+        background: transparent;
+    }
+
+    .wrapper-form {
+        padding: 20px;
+        margin-left: -284px;
+    }
+
+    .wrapper-btn {
+        margin: 40px 0;
+    }
+}

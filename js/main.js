@@ -1,7 +1,6 @@
 $(document).ready(function() {
 });
 
-
 $(".progress > span").each(function() {
     $(this)
         .data("origWidth", $(this).width())
